@@ -84,15 +84,33 @@
     border: 1px solid #015b97;
     padding: 0 10px;
 }
-.field input:focus{
-    border-bottom-width: 2px;
+.field input:focus, .field input:active, .field input:target{
+    border-color: #015b97;
+    box-shadow:  rgb(212 228 252) 0px 0px 0px 5px;
+}
+.abcRioButtonContentWrapper{
+    display: flex;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px 0px;
+    color: #000000;
+}
+.abcRioButtonIcon {
+   padding: 5px !important;
+}
 
-}
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #015b97;
-}
-.field input:hover, .field input:selection{
-    border: 1px solid #015b97;
+.field input:hover{
+    border: 2px solid #015b97;
 }
 .container h1{
     font-size: 26px;

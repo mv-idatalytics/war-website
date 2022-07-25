@@ -28,3 +28,16 @@ links.forEach(link => {
         forms.classList.toggle("show-signup");
     })
 })
+function onSuccess(googleUser) {
+    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+  }
+  function onFailure(error) {
+    console.log(error);
+  }
+
+
+
+
+
+    
+
